@@ -43,8 +43,10 @@
   input[type="checkbox"] {
     display: none;
   }
+
+  
   .btn.big01, .btn.big02{min-width:180px;padding:0 35px; -moz-border-radius:25px; -webkit-border-radius:25px; border-radius:25px; height:50px; font-size:18px; line-height:46px;}
-  .btn.big01 {background:#ec1d25; color:#fff;}
+  .btn.big01 {background:#00b1ff; color:#fff;}
   .btn.big02 {background:#fff; color:#444; border:1px solid #bbb }
   
   /* 자료입력 서식형 (tbl_form_wrap) */
@@ -164,6 +166,50 @@ table.board-list td a:hover { color:#000; text-decoration:underline; }
 	table.board-list td a { line-height:17px; }
 }
 
+/* sub title css */
+#sub .cont-tit{ text-align:center; margin:0px auto 50px;}
+#sub .cont-tit h2{font-size:32px; color:#333; font-weight:500; line-height:1.4; max-width:850px; margin:0 auto;} 
+#sub .cont-tit h2.big{font-size:40px;}
+#sub .cont-tit p{font-size:16px; margin:25px 0 0; color:#666; font-weight:300;}
+#sub .cont-tit small{font-size:20px; color:#ad7e5a; margin:0 0 15px; display:block; font-weight:500;} 
+#sub .cont-wr{padding:80px 0;}
+#sub .md-tit{font-size:24px; color:#333; font-weight:500; margin:0 0 10px}
+#sub .sm-tit{margin:0 0 40px; font-weight:300; font-size:17px;}
+b{font-weight:700;}
+
+/* sub layout 12 */ 
+#sub .tb-list{ border-top:1px solid #333;  width:100%;}
+#sub .tb-list dl{border-bottom:1px solid #e8e8e8; width:100%; display: table; margin-bottom: 0px; background-color: white;}
+#sub .tb-list dt{background:#f5f5f5;  display: table-cell;  vertical-align:middle; width:20%; padding:20px; text-align:center; font-size:1.5rem; color:#333; font-weight:700;}
+#sub .tb-list dd{ display: table-cell;  vertical-align:middle;  padding:40px;}
+#sub .tb-list p{text-align:left; padding:5px 0 5px 15px; position:relative; font-weight:300; font-size: 1.3rem; margin-bottom: 0;}
+#sub .tb-list p:after{content:''; width:4px; height:4px; border-radius:50%; position:absolute; left:0; top:14px; background:#ad7e5a;}
+
+/* 공모전 */
+#sub{overflow:hidden;}
+#sub .center{text-align:center;}
+img { display:inline-block; border:none; vertical-align:top; max-width:100%;}
+/* sub layout 01 */
+#sub .intro-box{ position:relative; } 
+#sub .intro-box .wr{overflow:hidden; }
+#sub .intro-box .left{float:left; width:50%; padding-right:50px; }
+#sub .intro-box .right{float:right; width:50%; padding-left:50px;} 
+#sub .intro-box .img.shadow img{ box-shadow:10px 10px 20px rgba(0,0,0,0.2); border:1px solid #e8e8e8; margin-bottom:30px;}  
+#sub .intro-box .tbox h2{font-size:36px; color:#333; margin:30px 0 40px; font-weight:500;}
+#sub .intro-box .tbox p{font-size:18px; color:#666; font-weight:300; line-height:1.8}
+#sub .intro-box .tbox p small{ margin:15px 0 0; display:block; color:#888; line-height:1.8;}
+#sub .intro-box .tbox ul li{position:relative; font-size:18px; color:#333; padding:5px 0 5px 35px;}
+#sub .intro-box .tbox ul li:after{content:''; background:url('/images/sub/li-check.png'); width:25px; height:25px; position:absolute; left:0; top:5px}
+
+
+#sub .intro-box .tbox1 h2{font-size:36px; color:#333; margin:30px 0 40px; font-weight:500;}
+#sub .intro-box .tbox1 p{font-size:18px; color:#666; font-weight:300; line-height:1.8}
+#sub .intro-box .tbox1 p small{ margin:15px 0 0; display:block; color:#888; /* line-height:1.8; */}
+#sub .intro-box .tbox1 ul li{position:relative; font-size:18px; color:#333; padding:20px 0 5px 0px;}
+#sub .intro-box .tbox1 ul li:after{content:''; background:url('../images/sub/li-check.png'); width:25px; height:25px; position:absolute; left:0; top:5px}
+
+.tab3 .right-box .max-w570{font-size: 16px;}
+
 @charset "UTF-8";
 /*
  * jQuery File Upload Plugin CSS Example 8.8.2
@@ -248,6 +294,9 @@ user-select: none;
 color: #fff;
 background-color: #47a447;
 border-color: #398439;
+}
+.drag_explain .btn .btn-danger .delete #all_remove_btn{
+  background-color: #999;
 }
 .btn:hover, .btn:focus {
 color: #333;
